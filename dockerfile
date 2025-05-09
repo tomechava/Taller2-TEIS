@@ -2,7 +2,7 @@
 FROM python:3.11-slim
 
 # Establece el directorio de trabajo
-WORKDIR /app
+WORKDIR /
 
 # Copia los archivos al contenedor
 COPY . .
@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Ejecuta la app
-CMD ["python", "__init__.py"]
+CMD ["python", "run.py"]
